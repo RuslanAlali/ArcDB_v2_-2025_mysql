@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variant Query Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+        }
+        input, select {
+            padding: 8px;
+            width: 200px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #results {
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Variant Query Tool</h1>
+    <div class="form-group">
+        <label for="chrom">Chromosome:</label>
+        <select id="chrom" name="chrom">
+            <option value="">Select chromosome</option>
+            {% for chr in chromosomes %}
+                <option value="{{ chr }}">{{ chr }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="start_pos">Start Position:</label>
+        <input type="number" id="start_pos" name="start_pos" placeholder="Enter start position" min="0">
+    </div>
+    <div class="form-group">
+        <label for="end_pos">End Position:</label>
+        <input type="number" id="end_pos" name="end_pos" placeholder="Enter end position" min="0">
+    </div>
+    <button onclick="queryVariants()">Query Variants</button>
+    
+    <div id="results"></div>
+
+    <script>
+        function queryVariants() {
+            const chrom = document.getElementById('chrom').value;
+            const startPos = document.getElementById('start_pos').value;
+            const endPos = document.getElementById('end_pos').value;
+            
+            // Clear previous results and errors
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '';
+            
+            // Validate inputs
+            if (!chrom) {
+                showError('Please select a chromosome');
+                return;
+            }
+            
+            if (!startPos || !endPos) {
+                showError('Please enter both start and end positions');
+                return;
+            }
+            
+            if (parseInt(startPos) < 0 || parseInt(endPos) < 0) {
+                showError('Positions must be positive integers');
+                return;
+            }
+            
+            if (parseInt(startPos) > parseInt(endPos)) {
+                showError('Start position must be less than or equal to end position');
+                return;
+            }
+            
+            resultsDiv.innerHTML = '<p>Loading...</p>';
+            
+            // Make API request
+            fetch(`/api/variants?chrom=${chrom}&start_pos=${startPos}&end_pos=${endPos}`)
+                .then(response => {
+                    if (!response.ok) {
+                        return response.json().then(err => { throw new Error(err.error || 'Request failed'); });
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    if (data.error) {
+                        showError(data.error);
+                    } else if (data.message) {
+                        resultsDiv.innerHTML = `<p>${data.message}</p>`;
+                    } else {
+                        displayResults(data.results);
+                    }
+                })
+                .catch(error => {
+                    showError('An error occurred: ' + error.message);
+                });
+        }
+        
+        function displayResults(results) {
+            const resultsDiv = document.getElementById('results');
+            
+            if (!results || results.length === 0) {
+                resultsDiv.innerHTML = '<p>No variants found in the specified range.</p>';
+                return;
+            }
+            
+            let html = `<h3>Results (${results.length} variants found)</h3>`;
+            html += `<table>
+                <thead>
+                    <tr>
+                        <th>Variant ID</th>
+                        <th>Detection Count</th>
+                    </tr>
+                </thead>
+                <tbody>`;
+            
+            results.forEach(variant => {
+                html += `<tr>
+                    <td>${variant.variant_ID}</td>
+                    <td>${variant.detection_count}</td>
+                </tr>`;
+            });
+            
+            html += `</tbody></table>`;
+            resultsDiv.innerHTML = html;
+        }
+        
+        function showError(message) {
+            const errorElement = document.createElement('p');
+            errorElement.className = 'error';
+            errorElement.textContent = message;
+            document.getElementById('results').prepend(errorElement);
+        }
+    </script>
+</body>
+</html>
