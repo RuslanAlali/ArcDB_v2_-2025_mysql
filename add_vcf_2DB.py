@@ -50,7 +50,7 @@ def vcf_to_dataframe(vcf_file):
     sample_name=os.path.basename(vcf_file).split("_")[0]
     print('sample_name')
     print(sample_name)
-    with open('samples.txt', 'a') as f: print(sample_name, file=f)
+    with open('samples22.txt', 'a') as f: print(sample_name, file=f)
     df['sample']=sample_name
     #print("filter:" + str(int(time.time()-timex)))
     # Convert data types as needed
@@ -88,34 +88,38 @@ def clean_dataframe(df):
     y = x.iloc[:,2]
     df.loc[:,'AF'] = y
     #chrM
-    x=df_chrM.iloc[:,7]
-    x=x.str.split(":",expand=True,n=7)
-    y = x.iloc[:,0]
-    y[y=="1/1"]="Hom"
-    y[y=="0/1"]="Het"
-    y[y=="1|1"]="Hom"
-    y[y=="0|1"]="Het"
-    y[y=="1|0"]="Het"
-    y[y=="1/0"]="Het"
-    y[y=="1"]="Hem"
-    df_chrM.loc[:,'ZYGOSITY']=y
-    z= x=="DP"
-    y = x.iloc[:,6]
-    df_chrM.loc[:,'DP'] = y
-    y = x.iloc[:,3]
-    df_chrM.loc[:,'AF'] = y
-    df=pd.concat([df, df_chrM], ignore_index=True)
+    #x=df_chrM.iloc[:,7]
+    #x=x.str.split(":",expand=True,n=7)
+    #y = x.iloc[:,0]
+    #y[y=="1/1"]="Hom"
+    #y[y=="0/1"]="Het"
+    #y[y=="1|1"]="Hom"
+    #y[y=="0|1"]="Het"
+    #y[y=="1|0"]="Het"
+    #y[y=="1/0"]="Het"
+    #y[y=="1"]="Hem"
+    #df_chrM.loc[:,'ZYGOSITY']=y
+    #z= x=="DP"
+    #y = x.iloc[:,6]
+    #df_chrM.loc[:,'DP'] = y
+    #y = x.iloc[:,3]
+    #df_chrM.loc[:,'AF'] = y
+    #df=pd.concat([df, df_chrM], ignore_index=True)
     df['DP']=pd.to_numeric(df['DP'])
     df["AF"]=pd.to_numeric(df["AF"])
     df=df[["CHROM","POS","REF","ALT","QUAL","ZYGOSITY","DP","AF",'sample']]
     # Clean data
-    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', 'X', 'Y', 'M']
+    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', 'X', 'Y', 'M']
     chroms= list(map(( lambda x: 'chr' + x), chroms) )
     df=df[df["CHROM"].isin(chroms)]
+    #chr22
+    #df=df[df['CHROM']=='chr22']
+    df['REF'] = df['REF'].str[:200]
+    df['ALT'] = df['ALT'].str[:200]
     return df
 
 def readAllVariants(table):
-    query="SELECT variantID,uniqueID FROM " + table
+    query="SELECT variantID,uniqueID FROM " + table + " where Chrom='chr22' "
     df= pd.read_sql(query, engine)
     return df
 

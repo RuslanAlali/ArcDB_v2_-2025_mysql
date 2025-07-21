@@ -1,5 +1,5 @@
 #!/bin/bash
-input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file20250612.csv"
+input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file20250612_chr22.csv"
 #input_file="vcf.temp.csv"
 if [ ! -f "$input_file" ]; then
     echo "Error: File $input_file not found"
@@ -12,10 +12,12 @@ tail -n +2 "$input_file" | while IFS=, read -r orderid analysis runFolder snsv_v
     
     # Define output filename
     output_vcf="/mnt/ruslan/ArcDB_v2/mysql_db/${orderid}_norm.vcf.gz"
+    output_vcf2="/mnt/ruslan/ArcDB_v2/mysql_db/${orderid}_normx.vcf.gz"
     
     echo "Processing order ID: $orderid"
     echo "Input VCF: $snsv_vcf"
     echo "Output VCF: $output_vcf"
+    echo "Output VCF: $output_vcf2"
     # Execute bcftools norm command
     bcftools norm "$snsv_vcf" -m- any --threads 10 -Oz -o "$output_vcf"
 
@@ -24,10 +26,15 @@ tail -n +2 "$input_file" | while IFS=, read -r orderid analysis runFolder snsv_v
     else
         echo "Error processing $orderid"
     fi
+    tabix "$output_vcf"
+    bcftools view -r chr22 "$output_vcf" --threads 10 -Oz -o "$output_vcf2"
 
-python add_vcf_2DB.py $output_vcf
+
+python add_vcf_2DB.py "$output_vcf2"
+
 rm $output_vcf 
-
+rm $output_vcf2 
+rm "$output_vcf".tbi
     
 done
 

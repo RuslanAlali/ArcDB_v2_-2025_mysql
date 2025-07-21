@@ -61,6 +61,7 @@ def process_variants_and_counts():
         print("Fetching unique partition IDs from vcf_detection...")
         unique_partition_ids_query = text("SELECT DISTINCT partitionID FROM VCF_detection")
         unique_partition_ids = [row[0] for row in session.execute(unique_partition_ids_query)]
+        unique_partition_ids = [pid for pid in unique_partition_ids if pid.startswith('chr22_')]
         print(f"Found {len(unique_partition_ids)} unique partitions.")
 
         total_variants_processed = 0
