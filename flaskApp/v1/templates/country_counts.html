@@ -1,0 +1,170 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Variant Database Query</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to ensure Inter font and rounded corners */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Align to top */
+            min-height: 100vh;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 1rem; /* More rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer shadow */
+            width: 100%;
+            max-width: 600px; /* Max width for better readability on large screens */
+            margin-top: 2rem;
+        }
+        .form-group label {
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .form-group select,
+        .form-group input[type="number"] {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem; /* Rounded input fields */
+            font-size: 1rem;
+            color: #4b5563;
+            transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .form-group select:focus,
+        .form-group input[type="number"]:focus {
+            outline: none;
+            border-color: #6366f1; /* Tailwind indigo-500 */
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Focus ring */
+        }
+        .btn-primary {
+            background-color: #6366f1; /* Tailwind indigo-600 */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5; /* Darker indigo on hover */
+        }
+        .error-message {
+            background-color: #fee2e2; /* Tailwind red-100 */
+            color: #dc2626; /* Tailwind red-700 */
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+            border: 1px solid #fca5a5; /* Tailwind red-300 */
+        }
+        .results-section {
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e7eb; /* Light gray border */
+        }
+        .results-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        .results-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .results-table th,
+        .results-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .results-table th {
+            background-color: #f9fafb; /* Light background for headers */
+            font-weight: 600;
+            color: #4b5563;
+            text-transform: uppercase;
+            font-size: 0.875rem;
+        }
+        .results-table tr:last-child td {
+            border-bottom: none;
+        }
+        .results-table tbody tr:hover {
+            background-color: #f3f4f6; /* Hover effect for rows */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-8">Genetic Variant Database Query</h1>
+
+        <form method="POST" action="/" class="space-y-6">
+            <div class="form-group">
+                <label for="chrom">Chromosome:</label>
+                <select id="chrom" name="chrom" required class="block mt-1">
+                    <option value="">--Select Chromosome--</option>
+                    {% for i in range(1, 23) %}
+                        <option value="chr{{ i }}">chr{{ i }}</option>
+                    {% endfor %}
+                    <option value="chrX">chrX</option>
+                    <option value="chrY">chrY</option>
+                    <option value="chrM">chrM</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pos">Position:</label>
+                <input type="number" id="pos" name="pos" required min="0" class="block mt-1">
+            </div>
+
+            <button type="submit" class="btn-primary w-full">Query Database</button>
+        </form>
+
+        {% if error_message %}
+            <div class="error-message">
+                <p>{{ error_message }}</p>
+            </div>
+        {% endif %}
+
+        {% if country_counts %}
+            <div class="results-section">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-4">Query Results: Sample Countries</h2>
+                {% if country_counts %}
+                    <table class="results-table">
+                        <thead>
+                            <tr>
+                                <th>Country</th>
+                                <th>Sample Count</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for country, count in country_counts.items() %}
+                                <tr>
+                                    <td>{{ country }}</td>
+                                    <td>{{ count }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                {% else %}
+                    <p class="text-gray-600">No country data found for the specified variant.</p>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

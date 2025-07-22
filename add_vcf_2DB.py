@@ -108,10 +108,13 @@ def clean_dataframe(df):
     df['DP']=pd.to_numeric(df['DP'])
     df["AF"]=pd.to_numeric(df["AF"])
     df=df[["CHROM","POS","REF","ALT","QUAL","ZYGOSITY","DP","AF",'sample']]
-    # Clean data
-    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', 'X', 'Y', 'M']
+    # Standard chromosomes data
+    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21','22', 'X', 'Y', 'M']
     chroms= list(map(( lambda x: 'chr' + x), chroms) )
     df=df[df["CHROM"].isin(chroms)]
+    # length of REF and ALT is 200 chr
+    df['REF'] = df['REF'].str[:200]
+    df['ALT'] = df['ALT'].str[:200]
     return df
 
 def readAllVariants(table):
