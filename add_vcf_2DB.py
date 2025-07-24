@@ -113,8 +113,8 @@ def clean_dataframe(df):
     chroms= list(map(( lambda x: 'chr' + x), chroms) )
     df=df[df["CHROM"].isin(chroms)]
     # length of REF and ALT is 200 chr
-    df['REF'] = df['REF'].str[:200]
-    df['ALT'] = df['ALT'].str[:200]
+    df['REF'] = df['REF'].str[:100]
+    df['ALT'] = df['ALT'].str[:100]
     return df
 
 def readAllVariants(table):

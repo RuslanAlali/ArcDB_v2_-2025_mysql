@@ -1,0 +1,572 @@
+Processing order ID: 201207
+Input VCF: /cegatbucket/cegatsamples/S7100_230206_CustomReference/03_snvs/201207_S7100Nr256_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201207_norm.vcf.gz
+Successfully normalized 201207
+sample_name
+201207
+done:56
+done : 989
+Processing order ID: 201209
+Input VCF: /cegatbucket/cegatsamples/S7100_230206_CustomReference/03_snvs/201209_S7100Nr252_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201209_norm.vcf.gz
+Successfully normalized 201209
+sample_name
+201209
+done:53
+done : 1006
+Processing order ID: 201213
+Input VCF: /cegatbucket/cegatsamples/S7100_230206_CustomReference/03_snvs/201213_S7100Nr261_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201213_norm.vcf.gz
+Successfully normalized 201213
+sample_name
+201213
+done:54
+done : 1009
+Processing order ID: 201221
+Input VCF: /cegatbucket/cegatsamples/S7100_230206_CustomReference/03_snvs/201221_S7100Nr265_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201221_norm.vcf.gz
+Successfully normalized 201221
+sample_name
+201221
+done:56
+done : 983
+Processing order ID: 201226
+Input VCF: /cegatbucket/cegatsamples/S7100_230206_CustomReference/03_snvs/201226_S7100Nr269_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201226_norm.vcf.gz
+Successfully normalized 201226
+sample_name
+201226
+done:54
+done : 974
+Processing order ID: 201453
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201453_S7100Nr531_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201453_norm.vcf.gz
+Successfully normalized 201453
+sample_name
+201453
+done:37
+done : 960
+Processing order ID: 201482
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201482_S7100Nr538_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201482_norm.vcf.gz
+Successfully normalized 201482
+sample_name
+201482
+done:38
+done : 966
+Processing order ID: 201487
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201487_S7100Nr554_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201487_norm.vcf.gz
+Successfully normalized 201487
+sample_name
+201487
+done:38
+done : 968
+Processing order ID: 201490
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201490_S7100Nr546_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201490_norm.vcf.gz
+Successfully normalized 201490
+sample_name
+201490
+done:36
+done : 984
+Processing order ID: 201492
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201492_S7100Nr555_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201492_norm.vcf.gz
+Successfully normalized 201492
+sample_name
+201492
+done:38
+done : 977
+Processing order ID: 201495
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201495_S7100Nr542_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201495_norm.vcf.gz
+Successfully normalized 201495
+sample_name
+201495
+done:36
+done : 963
+Processing order ID: 201497
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201497_S7100Nr558_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201497_norm.vcf.gz
+Successfully normalized 201497
+sample_name
+201497
+done:39
+done : 987
+Processing order ID: 201499
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201499_S7100Nr540_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201499_norm.vcf.gz
+Successfully normalized 201499
+sample_name
+201499
+done:37
+done : 962
+Processing order ID: 201506
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201506_S7100Nr580_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201506_norm.vcf.gz
+Successfully normalized 201506
+sample_name
+201506
+done:37
+done : 971
+Processing order ID: 201510
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201510_S7100Nr577_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201510_norm.vcf.gz
+Successfully normalized 201510
+sample_name
+201510
+done:37
+done : 956
+Processing order ID: 201512
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201512_S7100Nr565_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201512_norm.vcf.gz
+Successfully normalized 201512
+sample_name
+201512
+done:37
+done : 960
+Processing order ID: 201514
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201514_S7100Nr561_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201514_norm.vcf.gz
+Successfully normalized 201514
+sample_name
+201514
+done:37
+done : 958
+Processing order ID: 201516
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201516_S7100Nr562_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201516_norm.vcf.gz
+Successfully normalized 201516
+sample_name
+201516
+done:37
+done : 970
+Processing order ID: 201527
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201527_S7100Nr583_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201527_norm.vcf.gz
+Successfully normalized 201527
+sample_name
+201527
+done:38
+done : 972
+Processing order ID: 201529
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201529_S7100Nr560_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201529_norm.vcf.gz
+Successfully normalized 201529
+sample_name
+201529
+done:38
+done : 977
+Processing order ID: 201530
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201530_S7100Nr559_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201530_norm.vcf.gz
+Successfully normalized 201530
+sample_name
+201530
+done:36
+done : 975
+Processing order ID: 201538
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201538_S7100Nr589_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201538_norm.vcf.gz
+Successfully normalized 201538
+sample_name
+201538
+done:36
+done : 953
+Processing order ID: 201540
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201540_S7100Nr598_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201540_norm.vcf.gz
+Successfully normalized 201540
+sample_name
+201540
+done:37
+done : 980
+Processing order ID: 201541
+Input VCF: /cegatbucket/cegatsamples/S7100_230413_0827/03_snvs/201541_S7100Nr597_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201541_norm.vcf.gz
+Successfully normalized 201541
+sample_name
+201541
+done:35
+done : 967
+Processing order ID: 201576
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/201576_S7100Nr658_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201576_norm.vcf.gz
+Successfully normalized 201576
+sample_name
+201576
+done:39
+done : 984
+Processing order ID: 201577
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/201577_S7100Nr665_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201577_norm.vcf.gz
+Successfully normalized 201577
+sample_name
+201577
+done:37
+done : 965
+Processing order ID: 210002
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210002_S7100Nr664_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210002_norm.vcf.gz
+Successfully normalized 210002
+sample_name
+210002
+done:37
+done : 961
+Processing order ID: 210003
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210003_S7100Nr662_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210003_norm.vcf.gz
+Successfully normalized 210003
+sample_name
+210003
+done:38
+done : 982
+Processing order ID: 210004
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210004_S7100Nr666_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210004_norm.vcf.gz
+Successfully normalized 210004
+sample_name
+210004
+done:38
+done : 969
+Processing order ID: 210005
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210005_S7100Nr661_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210005_norm.vcf.gz
+Successfully normalized 210005
+sample_name
+210005
+done:40
+done : 993
+Processing order ID: 210006
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210006_S7100Nr657_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210006_norm.vcf.gz
+Successfully normalized 210006
+sample_name
+210006
+done:38
+done : 969
+Processing order ID: 210007
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210007_S7100Nr660_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210007_norm.vcf.gz
+Successfully normalized 210007
+sample_name
+210007
+done:38
+done : 983
+Processing order ID: 210008
+Input VCF: /cegatbucket/cegatsamples/S7100_230503_1504/03_snvs/210008_S7100Nr663_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210008_norm.vcf.gz
+Successfully normalized 210008
+sample_name
+210008
+done:39
+done : 968
+Processing order ID: 201573
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/201573_S7100Nr659_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201573_norm.vcf.gz
+Successfully normalized 201573
+sample_name
+201573
+done:38
+done : 993
+Processing order ID: 201575
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/201575_S7100Nr632_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/201575_norm.vcf.gz
+Successfully normalized 201575
+sample_name
+201575
+done:39
+done : 986
+Processing order ID: 210000
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210000_S7100Nr630_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210000_norm.vcf.gz
+Successfully normalized 210000
+sample_name
+210000
+done:39
+done : 986
+Processing order ID: 210001
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210001_S7100Nr631_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210001_norm.vcf.gz
+Successfully normalized 210001
+sample_name
+210001
+done:38
+done : 980
+Processing order ID: 210010
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210010_S7100Nr633_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210010_norm.vcf.gz
+Successfully normalized 210010
+sample_name
+210010
+done:35
+done : 972
+Processing order ID: 210013
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210013_S7100Nr640_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210013_norm.vcf.gz
+Successfully normalized 210013
+sample_name
+210013
+done:38
+done : 979
+Processing order ID: 210017
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210017_S7100Nr652_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210017_norm.vcf.gz
+Successfully normalized 210017
+sample_name
+210017
+done:38
+done : 986
+Processing order ID: 210020
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210020_S7100Nr649_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210020_norm.vcf.gz
+Successfully normalized 210020
+sample_name
+210020
+done:39
+done : 982
+Processing order ID: 210023
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210023_S7100Nr654_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210023_norm.vcf.gz
+Successfully normalized 210023
+sample_name
+210023
+done:36
+done : 985
+Processing order ID: 210027
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210027_S7100Nr647_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210027_norm.vcf.gz
+Successfully normalized 210027
+sample_name
+210027
+done:36
+done : 975
+Processing order ID: 210029
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210029_S7100Nr644_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210029_norm.vcf.gz
+Successfully normalized 210029
+sample_name
+210029
+done:37
+done : 991
+Processing order ID: 210032
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210032_S7100Nr637_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210032_norm.vcf.gz
+Successfully normalized 210032
+sample_name
+210032
+done:38
+done : 983
+Processing order ID: 210033
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210033_S7100Nr671_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210033_norm.vcf.gz
+Successfully normalized 210033
+sample_name
+210033
+done:38
+done : 981
+Processing order ID: 210035
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210035_S7100Nr669_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210035_norm.vcf.gz
+Successfully normalized 210035
+sample_name
+210035
+done:39
+done : 981
+Processing order ID: 210036
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210036_S7100Nr672_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210036_norm.vcf.gz
+Successfully normalized 210036
+sample_name
+210036
+done:38
+done : 979
+Processing order ID: 210037
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210037_S7100Nr668_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210037_norm.vcf.gz
+Successfully normalized 210037
+sample_name
+210037
+done:37
+done : 977
+Processing order ID: 210038
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210038_S7100Nr667_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210038_norm.vcf.gz
+Successfully normalized 210038
+sample_name
+210038
+done:39
+done : 984
+Processing order ID: 210039
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210039_S7100Nr673_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210039_norm.vcf.gz
+Successfully normalized 210039
+sample_name
+210039
+done:51
+done : 993
+Processing order ID: 210040
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210040_S7100Nr674_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210040_norm.vcf.gz
+Successfully normalized 210040
+sample_name
+210040
+done:36
+done : 978
+Processing order ID: 210041
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210041_S7100Nr677_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210041_norm.vcf.gz
+Successfully normalized 210041
+sample_name
+210041
+done:38
+done : 983
+Processing order ID: 210042
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210042_S7100Nr675_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210042_norm.vcf.gz
+Successfully normalized 210042
+sample_name
+210042
+done:38
+done : 987
+Processing order ID: 210043
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210043_S7100Nr676_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210043_norm.vcf.gz
+Successfully normalized 210043
+sample_name
+210043
+done:38
+done : 979
+Processing order ID: 210060
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210060_S7100Nr679_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210060_norm.vcf.gz
+Successfully normalized 210060
+sample_name
+210060
+done:37
+done : 977
+Processing order ID: 210061
+Input VCF: /cegatbucket/cegatsamples/S7100_230511_1011/03_snvs/210061_S7100Nr678_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210061_norm.vcf.gz
+Successfully normalized 210061
+sample_name
+210061
+done:37
+done : 975
+Processing order ID: 210044
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210044_S7100Nr707_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210044_norm.vcf.gz
+Successfully normalized 210044
+sample_name
+210044
+done:37
+done : 975
+Processing order ID: 210046
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210046_S7100Nr697_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210046_norm.vcf.gz
+Successfully normalized 210046
+sample_name
+210046
+done:37
+done : 972
+Processing order ID: 210052
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210052_S7100Nr685_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210052_norm.vcf.gz
+Successfully normalized 210052
+sample_name
+210052
+done:38
+done : 986
+Processing order ID: 210054
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210054_S7100Nr690_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210054_norm.vcf.gz
+Successfully normalized 210054
+sample_name
+210054
+done:38
+done : 987
+Processing order ID: 210062
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210062_S7100Nr692_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210062_norm.vcf.gz
+Successfully normalized 210062
+sample_name
+210062
+done:37
+done : 969
+Processing order ID: 210066
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210066_S7100Nr698_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210066_norm.vcf.gz
+Successfully normalized 210066
+sample_name
+210066
+done:38
+done : 994
+Processing order ID: 210068
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210068_S7100Nr701_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210068_norm.vcf.gz
+Successfully normalized 210068
+sample_name
+210068
+done:37
+done : 979
+Processing order ID: 210081
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210081_S7100Nr712_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210081_norm.vcf.gz
+Successfully normalized 210081
+sample_name
+210081
+done:38
+done : 991
+Processing order ID: 210082
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210082_S7100Nr717_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210082_norm.vcf.gz
+Successfully normalized 210082
+sample_name
+210082
+done:39
+done : 989
+Processing order ID: 210083
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210083_S7100Nr718_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210083_norm.vcf.gz
+Successfully normalized 210083
+sample_name
+210083
+done:40
+done : 1009
+Processing order ID: 210084
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210084_S7100Nr719_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210084_norm.vcf.gz
+Successfully normalized 210084
+sample_name
+210084
+done:38
+done : 991
+Processing order ID: 210085
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210085_S7100Nr716_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210085_norm.vcf.gz
+Successfully normalized 210085
+sample_name
+210085
+done:39
+done : 1009
+Processing order ID: 210086
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210086_S7100Nr708_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210086_norm.vcf.gz
+Successfully normalized 210086
+sample_name
+210086
+done:40
+done : 1004
+Processing order ID: 210087
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210087_S7100Nr703_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210087_norm.vcf.gz
+Successfully normalized 210087
+sample_name
+210087
+done:38
+done : 989
+Processing order ID: 210088
+Input VCF: /cegatbucket/cegatsamples/S7100_230516_1042/03_snvs/210088_S7100Nr704_wgs.hard-filtered.vcf.gz
+Output VCF: /mnt/ruslan/ArcDB_v2/mysql_db/210088_norm.vcf.gz
+Successfully normalized 210088
