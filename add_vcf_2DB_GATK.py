@@ -66,8 +66,8 @@ def vcf_to_dataframe(vcf_file):
 
 def clean_dataframe(df):
     #Split to chrM and the rest
-    df_chrM=df[df['CHROM']=="chrM"]
-    df=df[df['CHROM']!="chrM"]
+    #df_chrM=df[df['CHROM']=="chrM"]
+    #df=df[df['CHROM']!="chrM"]
     #Sample column
     timex=time.time()
     x=df.iloc[:,7]
@@ -88,28 +88,28 @@ def clean_dataframe(df):
     y = x.iloc[:,2]
     df.loc[:,'AF'] = y
     #chrM
-    x=df_chrM.iloc[:,7]
-    x=x.str.split(":",expand=True,n=7)
-    y = x.iloc[:,0]
-    y[y=="1/1"]="Hom"
-    y[y=="0/1"]="Het"
-    y[y=="1|1"]="Hom"
-    y[y=="0|1"]="Het"
-    y[y=="1|0"]="Het"
-    y[y=="1/0"]="Het"
-    y[y=="1"]="Hem"
-    df_chrM.loc[:,'ZYGOSITY']=y
-    z= x=="DP"
-    y = x.iloc[:,6]
-    df_chrM.loc[:,'DP'] = y
-    y = x.iloc[:,3]
-    df_chrM.loc[:,'AF'] = y
-    df=pd.concat([df, df_chrM], ignore_index=True)
+    #x=df_chrM.iloc[:,7]
+    #x=x.str.split(":",expand=True,n=7)
+    #y = x.iloc[:,0]
+    #y[y=="1/1"]="Hom"
+    #y[y=="0/1"]="Het"
+    #y[y=="1|1"]="Hom"
+    #y[y=="0|1"]="Het"
+    #y[y=="1|0"]="Het"
+    #y[y=="1/0"]="Het"
+    #y[y=="1"]="Hem"
+    #df_chrM.loc[:,'ZYGOSITY']=y
+    #z= x=="DP"
+    #y = x.iloc[:,6]
+    #df_chrM.loc[:,'DP'] = y
+    #y = x.iloc[:,3]
+    #df_chrM.loc[:,'AF'] = y
+    #df=pd.concat([df, df_chrM], ignore_index=True)
     df['DP']=pd.to_numeric(df['DP'])
     df["AF"]=pd.to_numeric(df["AF"])
     df=df[["CHROM","POS","REF","ALT","QUAL","ZYGOSITY","DP","AF",'sample']]
     # Standard chromosomes data
-    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21','22', 'X', 'Y', 'M']
+    chroms=['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21','22', 'X', 'Y']
     chroms= list(map(( lambda x: 'chr' + x), chroms) )
     df=df[df["CHROM"].isin(chroms)]
     # length of REF and ALT is 200 chr

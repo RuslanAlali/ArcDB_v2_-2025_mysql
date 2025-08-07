@@ -2,6 +2,7 @@
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file20250612.csv"
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_old_cegat_v2_annotation.csv"
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_ArcDragen_v3_annotation.csv"
+input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_old_varvis_v4_annotation"
 #input_file="vcf.temp.csv"
 if [ ! -f "$input_file" ]; then
     echo "Error: File $input_file not found"
@@ -19,7 +20,7 @@ tail -n +2 "$input_file" | while IFS=, read -r orderid analysis runFolder snsv_v
     echo "Input VCF: $snsv_vcf"
     echo "Output VCF: $output_vcf"
     # Execute bcftools norm command
-    bcftools norm "$snsv_vcf" -m- any --threads 10 -Oz -o "$output_vcf"
+    bcftools norm "$snsv_vcf" -m- any --threads 15 -Oz -o "$output_vcf"
 
     if [ $? -eq 0 ]; then
         echo "Successfully normalized $orderid"
@@ -27,7 +28,7 @@ tail -n +2 "$input_file" | while IFS=, read -r orderid analysis runFolder snsv_v
         echo "Error processing $orderid"
     fi
 
-python add_vcf_2DB.py $output_vcf
+python add_vcf_2DB_GATK.py $output_vcf
 rm $output_vcf 
 
     
