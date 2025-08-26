@@ -779,7 +779,7 @@ CREATE TABLE `variant_counts`(
     `count` BIGINT NOT NULL
     );
 
-CREATE TABLE `variant_counts_highQC`(
+CREATE TABLE `variant_counts_hq`(
     `variantID` BIGINT NOT NULL PRIMARY KEY,
     `partitionID` VARCHAR(255),
     `count` BIGINT NOT NULL

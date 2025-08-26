@@ -2,7 +2,7 @@
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file20250612.csv"
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_old_cegat_v2_annotation.csv"
 input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_ArcDragen_v3_annotation.csv"
-input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_old_varvis_v4_annotation"
+input_file="/mnt/ruslan/ArcDB_v2/mysql_db/resource/vcf_file_old_varvis_v4_annotation.csv"
 #input_file="vcf.temp.csv"
 if [ ! -f "$input_file" ]; then
     echo "Error: File $input_file not found"
